@@ -34,3 +34,11 @@ var extraTimeRaft = new Raft({
 	}
 });
 extraTimeRaft.loop();
+
+// Try commenting out the Raft object above, and instead calling the code below.
+// Without Raft, changes in the DOM happen more frequently, but at the cost of lowered FPS.
+// Scrolling, for example, is much choppier in this second example.
+
+// $('.box').each(function (){
+// 	$(this).css('width', Math.random()*800);
+// });
